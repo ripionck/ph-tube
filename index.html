@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PHero Tube</title>
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+     <!-- Font-awesome Link-->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+   <!-- custom css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Nav section -->
+    <nav class="container d-flex justify-content-between mt-3">
+      <img style="width: 150px" src="../Logo.png" alt="Phero-Tube" />
+      <button id="sort-button" class="border-0 px-3 rounded-2 ">Sort by view</button>
+      <button class="bg-danger border-0 rounded-2 px-3">
+        <a
+          class="text-white"
+          style="text-decoration: none"
+          href="blog.html"
+          target="_blank"
+          >Blog</a
+        >
+      </button>
+    </nav>
+    <hr />
+    <!-- category button section -->
+    <div class="d-flex justify-content-center mt-4">
+      <button id="category-all" class="category-button active" data-category="1000">All</button>
+      <button class="category-button" data-category="1001">Music</button>
+      <button class="category-button" data-category="1003">Comedy</button>
+      <button class="category-button" data-category="1005">Drawing</button>
+    </div>
+
+    <!-- video container -->
+    <div id="videos-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
